@@ -1,0 +1,14 @@
++load:
+  for_each>:
+    alphabet: [
+      a,
+      b,
+      c
+    ]
+  _do:
+    sh>: |
+      if [ ${alphabet} = "c" ]; then exit 1; fi;
+      echo ${alphabet}
+
+  _error:
+    sh>: cat log.out
