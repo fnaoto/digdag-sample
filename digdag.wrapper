@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -ue
+
+exec >> digdag.log
+exec 2>> digdag-error.log
+
+exec digdag $@

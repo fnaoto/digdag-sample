@@ -1,2 +1,3 @@
 .digdag/**
 log.out
+*.log

@@ -1,8 +1,13 @@
 # digdag-sample
 
-## Get info log in _error session
+## Get error log in for_each session
 
 ```sh
-$ digdag run --rerun --log log.out main.dig
+$ digdag run --rerun --log-level error error_in_for_each.dig
 ```
-(Log has keep saving in every time, not flushed)
+
+## Get error log in sh session
+
+```sh
+$ digdag run --rerun --log-level error error_in_sh.dig
+```
