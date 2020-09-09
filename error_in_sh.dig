@@ -9,6 +9,5 @@
     sh>: |
       if [ ${alphabet} = "c" ]; then exit 1; fi;
       echo ${alphabet}
-
-  _error:
-    sh>: cat log.out
+    _error:
+      sh>: env | sort
