@@ -1,0 +1,9 @@
++set_env:
+  rb>: ListFiles.run
+  require: script/list_files
+
++load:
+  for_each>:
+    file: ${LIST_FILES}
+  _do:
+    sh>: echo ${file}
